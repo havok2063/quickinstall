@@ -9,6 +9,7 @@ import sys
 
 CURDIR = os.path.abspath(os.curdir)
 
+
 def write_header(name=None, version='master'):
     ''' Write proper file header in a given shell format
 
@@ -45,6 +46,7 @@ prepend-path PYTHONPATH $PRODUCT_DIR/python
                 """.format(product_dir, name, version)
 
     return hdr.strip()
+
 
 def get_pythonpath(name):
     ''' get a python path '''
